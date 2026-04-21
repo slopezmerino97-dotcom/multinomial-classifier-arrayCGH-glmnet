@@ -1,17 +1,11 @@
-# multinomial-classifier-arrayCGH-glmnet
-Classification Assessment of Tumor Subtypes using Elastic Net (glmnet)
-The workflow includes:
+#CLASSIFICATION ASSESSMENT OF TUMOR SUBTYPES
 
-- feature selection using filterVarImp
-- nested cross-validation
-- hyperparameter tuning (alpha, lambda)
-- model evaluation across repetitions
-- prediction on independent validation dataset
+This repository contains an R implementation of a multinomial classifier developed to predict breast cancer subtypes (HER2+, HR+, Triple Negative) from array-CGH data.
 
-The classifier was implemented in R using caret and glmnet.
-## Ongoing improvements
+The goal of this project was to build a reproducible machine learning pipeline for high dimensional genomic data, including feature selection, nested cross validation and hyperparameter optimisation using glmnet.
 
-Planned extensions of this work include:
+The analysis script is available in the "code" directory and the summary outputs of the repeated nested cross-validation experiments are provided in "results".
 
-- testing the classifier with larger feature subsets to evaluate robustness with respect to feature selection size
-- implementing a baseline logistic regression model to benchmark performance against the elastic net approach
+The dataset used in this project was distributed as part of a university course and cannot be shared publicly.
+
+Current extensions of the work include testing the effect of larger feature subsets and implementing a logistic regression baseline model for comparison.
